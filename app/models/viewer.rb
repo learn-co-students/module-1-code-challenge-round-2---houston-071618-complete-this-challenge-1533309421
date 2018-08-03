@@ -27,4 +27,7 @@ class Viewer
   def add_movie_to_queue(movie)
     QueueItem.new(self, movie)
   end
+
+  def rate_movie(movie, rating)
+  end
 end
