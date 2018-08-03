@@ -4,9 +4,23 @@ def reload
   load 'config/environment.rb'
 end
 
-# Insert code here to run before hitting the binding.pry
-# This is a convenient place to define variables and/or set up new object instances,
-# so they will be available to test and play around with in your console
+# Viewers
+erica = Viewer.new("Erica")
+sam = Viewer.new("Sam")
+jim = Viewer.new("Jim")
+
+#Movies
+titanic = Movie.new("Titanic")
+holly = Movie.new("Holly")
+
+
+#Queue_items
+q1 = QueueItem.new(erica, titanic, 3)
+q2 = QueueItem.new(erica, holly)
+q3 = QueueItem.new(sam, holly, 5)
+q4 = QueueItem.new(jim, holly, 5)
+
+
 
 binding.pry
-0 #leave this here to ensure binding.pry isn't the last line
+"Hello World" #leave this here to ensure binding.pry isn't the last line
